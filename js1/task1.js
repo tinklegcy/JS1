@@ -9,9 +9,6 @@ function click() {
     var i = Math.floor(Math.random()*9);
     var x = Math.floor(Math.random()*9);
     var y = Math.floor(Math.random()*9);
-    box[i].style.backgroundColor = color();
-    box[x].style.backgroundColor = color();
-    box[y].style.backgroundColor = color();
 //不许重复
     if (i!=x&i!=y&x!=y) {
         box[i].style.backgroundColor=color();
