@@ -30,6 +30,7 @@ function end() {
         box[b].style.backgroundColor = "#ff8c00";
     }
 }
+
 //随机生成RGB颜色
 function color() {
     var rgb;
