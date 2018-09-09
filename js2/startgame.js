@@ -44,26 +44,6 @@ if (JSON.parse(window.sessionStorage.getItem("bgColor"))) {
     //创建一个空数组
     bgColor = new Array();
 }
-// //激活背景色的变量
-// if (JSON.parse(window.sessionStorage.getItem("activation"))) {
-//     activation = JSON.parse(window.sessionStorage.getItem("activation"));
-// } else {
-//     activation = 0;
-// }
-// //设置激活for循环条件
-//     //使每次跳转都能保持颜色
-//
-//
-// if (activation ==1) {
-//     for (var n = 1; n <= bgColor.length; n++) {
-//         $(".day-triangle").eq(0).css("border-right-color", "#c9c9c9");
-//         $(".day-btn").eq(0).css("background-color", "#c9c9c9");
-//     }
-// }
-// for (var m = 1; m <= bgColor.length; m++) {
-//     $(".day-triangle").eq(0).css("border-right-color", "#24a7c6");
-//     $(".day-btn").eq(0).css("background-color", "#24a7c6");
-// }
 //死亡人数
 if (JSON.parse(window.sessionStorage.getItem("die"))) {
     die = JSON.parse(window.sessionStorage.getItem("die"));
@@ -72,17 +52,7 @@ if (JSON.parse(window.sessionStorage.getItem("die"))) {
     die = new Array();
 }
 console.log(die);
-// //根据死亡数添加文本
-// if (die.length !== 0) {
-//     for (var s = 0; s < die.length; s++) {
-//         var b = die[s];
-//         if ((s + 1) % 2 === 0) {
-//             $(".note").eq(s).html("白天:" + b + "号被大家投死，他的身份是"+playerpeople[b-1].name);
-//         } else {
-//             $(".note").eq(s).html("晚上:" + b + "号被杀手杀死，他的身份是"+playerpeople[b-1].name);
-//         }
-//     }
-// }
+
 // 根据是否完成投票来决定按钮的显示色
 
 if (die.length % 2 == 0) {

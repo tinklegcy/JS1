@@ -5,13 +5,11 @@ var playerpeople = JSON.parse(sessionStorage.getItem("playerpeople"));
 var click = JSON.parse(window.sessionStorage.getItem("click"));
 var note = JSON.parse(window.sessionStorage.getItem("note"));
 var bgColor = JSON.parse(window.sessionStorage.getItem("bgColor"));
-// var activation = JSON.parse(window.sessionStorage.getItem("activation"));
 var day = JSON.parse(window.sessionStorage.getItem("day"));
 var die = JSON.parse(window.sessionStorage.getItem("die"));
 console.log(playerpeople);
 console.log(bgColor);
 console.log(click);
-
 console.log(note);
 console.log(day);
 console.log(die);
@@ -149,7 +147,6 @@ function JumpStorage() {
     //存储需要的数据
     sessionStorage.setItem("die", JSON.stringify(die));
     sessionStorage.setItem("day", JSON.stringify(day));
-    // sessionStorage.setItem("activation", JSON.stringify(activation));
     sessionStorage.setItem("bgcolor", JSON.stringify(bgColor));
     sessionStorage.setItem("click", JSON.stringify(click));
     sessionStorage.setItem("playerpeople", JSON.stringify(playerpeople))
