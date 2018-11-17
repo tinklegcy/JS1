@@ -11,30 +11,29 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
     // console.log(this)
     // console.log(options)
     var list = JSON.parse(options.list)
     // 获取数据   
     // console.log(list)
     wx.request({
-        url: 'https://www.jnshu.com/a/occupation/list',
-      success: res => { 
+      url: 'https://www.jnshu.com/a/occupation/list',
+      success: res => {
         // console.log(res)
         var resData = res.data.data.occupations;
-        // console.log(resData);
-        // console.log(resData[list[0].index])
-        // console.log(resData[list[1].index])
-        // console.log(resData[list[2].index])
+        console.log(resData);
+        console.log(resData[list[0].index]);
+        console.log(resData[list[1].index]);
+        console.log(resData[list[2].index]);
         var list1 = [resData[list[0].index], resData[list[1].index], resData[list[2].index]]
-        var list2 = [ { name: list1[0].name, btn: 0 },
-                      { name: list1[1].name, btn: 1 },
-                      { name: list1[2].name, btn: 2 }
-                    ];
+        var list2 = [{ name: list1[0].name, btn: 0 },
+        { name: list1[1].name, btn: 1 },
+        { name: list1[2].name, btn: 2 }
+        ];
         var list3 = [JSON.parse(list1[0].salary), JSON.parse(list1[1].salary), JSON.parse(list1[2].salary)]
         console.log(list3)
         console.log(list1)
-        that.setData({
+        this.setData({
           viewList1: list1,
           viewList2: list2,
           viewList3: list3
@@ -47,12 +46,9 @@ Page({
   },
   //
   bindChange: function (e) {
-    // console.log(e);
-    var that = this
-    that.setData({
+    this.setData({
       click: e.target.dataset.btn
     })
-
   },
 
   /**
@@ -66,7 +62,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**

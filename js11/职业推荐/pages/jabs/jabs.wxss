@@ -2,7 +2,7 @@
     margin-top: 15px;
     color: #000;
     text-align: center;
-    font-size: 50rpx;
+    font-size: 40rpx;
 }
 .main-style {
   padding: 0 5vw;
@@ -12,31 +12,26 @@
 }
 .main-title {
   display: flex;
-  margin-top: 1rem;
-  width: 100%;
-  height: 3rem;
+  margin: 1rem 0;
 }
 .key-style {
   display: inline-block;
   width: 33%;
   text-align: center;
-  background-color: white; 
-  font-size: 25px;
-  line-height: 38spx; 
-  color: black ;
+  background-color: white;
 }
 .click-style {
-  color: #00FF99;
-  border-bottom: 2px solid #00FF99;
+  color: green;
+  border-bottom: 2px solid green;
 }
 .row {
-  margin: 3vh 0;
-}
-.row1 {
-  margin: 1vh 0;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 20rpx;
 }
 .flex-wrp {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 20rpx;
 }
