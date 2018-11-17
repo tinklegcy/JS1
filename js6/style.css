@@ -1,0 +1,38 @@
+body {
+    background-color: #f0f0f0;
+}
+/*.container1 {*/
+    /*margin: 0;*/
+/*}*/
+.bg-ccc {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.system {
+    padding-left: 20px;
+}
+.admin0 {
+    padding-right: 20px;
+}
+.admin {
+    width: 32px;
+    height: 32px;
+}
+.article1 {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+}
+.main-flex {
+    display: flex;
+}
+input[type="text"] {
+    max-width: 15%;
+    /*border: 1px solid#e8e8e8;*/
+}
+.pd-top {
+    padding-top: 10px;
+}

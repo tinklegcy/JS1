@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="x-admin">
+<head>
+    <meta charset="UTF-8">
+    <title>X管理系统</title>
+    <link rel="stylesheet" href="stylesheets/ad.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-4.1.3.min.css">
+</head>
+<body>
+<div class="x-view-full" ng-controller="x-controller">
+    <div class="x-project-header">
+        <div id="x-project-title">萝卜多后台管理系统</div>
+        <div id="x-login-user"><a href="/user/tttt">{{currentUser}}</a>&nbsp;<a href="/logout">退出</a></div>
+    </div>
+    <div class="x-sidemenu">
+        <accordion close-others="oneAtATime">
+            <accordion-group heading="{{menu.text}}" ng-repeat="menu in menus" is-open="$first">
+                <div ng-repeat="subMenu in menu.subMenus"><a href="" ng-click="setContent(subMenu.action)">{{subMenu.text}}</a></div>
+            </accordion-group>
+        </accordion>
+    </div>
+    <div class="x-contents">
+        <div ng-include="content"></div>
+    </div>
+</div>
+<script src="javascripts/angular-1.4.3.min.js.js"></script>
+<script src="javascripts/angular-animate-1.4.3.min.js"></script>
+<script src="javascripts/ui-bootstrap-tpls-0.13.4.js"></script>
+<script src="javascripts/bootstrap-admin.js"></script>
+</body>
+</html>

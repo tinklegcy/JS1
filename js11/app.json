@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/test/test",
+        "pages/result/result"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#303030",
+        "navigationBarTitleText": "职业测试",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "default",
+        "backgroundColor": "blue",
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "#fff",
+        "selectedColor": "#46c11b",
+        "backgroundColor": "#fcfcfc",
+        "borderStyle": "black",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/app/home1.png",
+                "selectedIconPath": "images/app/home2.png"
+            },
+            {
+                "pagePath": "pages/test/test",
+                "text": "测试",
+                "iconPath": "images/app/menu1.png",
+                "selectedIconPath": "images/app/menu2.png"
+            }
+        ]
+    }
+}

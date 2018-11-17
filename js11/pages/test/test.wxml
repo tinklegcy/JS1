@@ -1,0 +1,28 @@
+<view class="container" style='width:100%' >
+<view class="title">试试什么职业最适合你</view>
+<picker id="ducation" class="list-item" bindchange="bindPickerChange" value="{{userInfo.ducation}}" range="{{ducation}}">
+<text>学历：</text>
+<text>{{ducation[userInfo.ducation]}}</text>     
+</picker>
+<picker id="sex" class="list-item" bindchange="bindPickerChange" value="{{userInfo.sex}}" range="{{sex}}">
+<text>性别：</text>
+<text>{{sex[userInfo.sex]}}</text>      
+</picker>
+<picker id="age" class="list-item" bindchange="bindPickerChange" value="{{userInfo.age}}" range="{{age}}">
+<text>年龄：</text>
+<text>{{age[userInfo.age]}}</text>      
+</picker>
+<picker id="base" class="list-item" bindchange="bindPickerChange" value="{{userInfo.base}}"range="{{base}}">
+<text>基础：</text>
+<text>{{base[userInfo.base]}}</text>      
+</picker>
+<picker id="major" class="list-item" bindchange="bindPickerChange" value="{{userInfo.major}}" range="{{major}}">
+<text>专业：</text>
+<text>{{major[userInfo.major]}}</text>      
+</picker>
+<picker id="logic" class="list-item" bindchange="bindPickerChange" value="{{userInfo.logic}}" range="{{logic}}">
+<text>逻辑：</text>
+<text>{{logic[userInfo.logic]}}</text>      
+</picker>
+<button class='btn' bindtap='submit'>选好了,点击查看</button>
+</view>

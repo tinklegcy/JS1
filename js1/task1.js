@@ -34,9 +34,9 @@ function end() {
 //随机生成RGB颜色
 function color() {
     var rgb;
-    var r = Math.floor(Math.random()*256); //随机生成256以内r值
-    var g = Math.floor(Math.random()*256); //随机生成256以内g值
-    var b = Math.floor(Math.random()*256); //随机生成256以内b值
+    var r = Math.floor(Math.random()*265); //随机生成256以内r值
+    var g = Math.floor(Math.random()*265); //随机生成256以内g值
+    var b = Math.floor(Math.random()*265); //随机生成256以内b值
     rgb = 'rgb('+r+','+g+','+b+')';
     return rgb;
 }

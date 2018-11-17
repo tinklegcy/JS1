@@ -1,0 +1,42 @@
+.title{
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+    font-size: 50rpx;
+}
+.main-style {
+  padding: 0 5vw;
+}
+.text-center {
+  text-align: center;
+}
+.main-title {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  height: 3rem;
+}
+.key-style {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  background-color: white; 
+  font-size: 25px;
+  line-height: 38spx; 
+  color: black ;
+}
+.click-style {
+  color: #00FF99;
+  border-bottom: 2px solid #00FF99;
+}
+.row {
+  margin: 3vh 0;
+}
+.row1 {
+  margin: 1vh 0;
+}
+.flex-wrp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

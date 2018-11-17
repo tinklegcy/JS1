@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none
+}
+
+/*.accordion {*/
+    /*width: 20%;*/
+/*}*/
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    background: #4d4d4d;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #fff;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.submenu {
+    display: none;
+    background: #9fa095;
+    font-size: 14px
+}
+
+.submenu li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease
+}
+
+.submenu a:hover {
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <!-- CSS -->
+    <!-- load bootstrap (bootswatch version) -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <!-- JS -->
+    <!-- load angular, ngRoute, ngAnimate -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script src="js6.js"></script>
+</head>
+
+<!-- apply our angular app -->
+<body ng-app="animateApp">
+<my-page ng-repeat="item in expanders" page-title="item.title">
+    <p>{{items.text}}</p> //或者写其他HTML片段
+</my-page>
+
+</body>
+</html>
